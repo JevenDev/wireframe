@@ -1,57 +1,85 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-body{
-    background-color: skyblue;
+/* Body styling */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
 }
 
-.flex-box{
+/* Flexbox container for main content */
+.flex-box {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    padding: 0;
+    padding: 1rem;
     align-items: flex-start;
     justify-content: center;
-    gap: 2rem;
-    flex: 2;
+    gap: 1rem;
 }
 
-.flex-box section{
-    border: 2px solid black;
-    border-radius: 15px;
-    padding: 5rem;
-    text-align: center;
-}
-
-.header{
+/* Flexbox container for recent work */
+.recent-work-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin: 0 auto;
-    padding: 0;
+    padding: 1rem;
+    align-items: flex-start;
     justify-content: center;
-    border: 2px solid black;
-    border-radius: 15px;
-    padding: 5rem;
+    gap: 1rem;
+    overflow-x: auto;
 }
 
-.header-break{
-    padding: 2.5rem;
+/* Styling for each section in the flexbox */
+.flex-box section, .recent-work-container section {
+    border: 2px dashed #000;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+    flex: 0 0 auto;
 }
 
-.footer{
+/* Ensure recent work sections adjust to fit the image */
+.recent-work-container section {
+    position: relative;
+    width: 25%;
+}
+
+.recent-work-container section img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #000;
+    border-radius: 10px;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+/* Break between header and main content */
+.header-break {
+    padding: 1rem;
+}
+
+/* Footer styling */
+.footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
-    margin: 0 auto;
-    padding: 0;
-}
-
-.footer h3{
-    border: 2px solid black;
-    border-radius: 15px;
-    padding: 2.5rem;
+    border: 2px dashed #000;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #fff;
 }

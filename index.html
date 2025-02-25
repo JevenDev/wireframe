@@ -1,47 +1,53 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>wireframe assignment jeven</title>
-        <link href="style.css" rel="stylesheet" type="text/css" media="all">
-    </head>
-    
-    <body>
-        <div class="header">
-            <h1>header</h1>
-        </div>        
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Portfolio Wireframe</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header" role="banner">
+        <h1>Art Portfolio</h1>
+    </header>
 
-        <div class="header-break"></div>
+    <div class="header-break"></div>
 
+    <!-- Navbar Section -->
+    <main role="main">
         <div class="flex-box">
-            <section>
-                <p>1</p>
+            <section aria-label="Gallery">
+                <p>Gallery</p>
             </section>
-            <section>
-                <p>2</p>
+            <section aria-label="Artist Bio">
+                <p>Artist Bio</p>
             </section>
-            <section>
-                <p>3</p>
+            <section aria-label="Exhibitions">
+                <p>Exhibitions</p>
             </section>
-            <section>
-                <p>4</p>
-            </section>
-            <section>
-                <p>5</p>
-            </section>
-            <section>
-                <p>6</p>
+            <section aria-label="Contact">
+                <p>Contact</p>
             </section>
         </div>
-    
-    </body>
+        
+        <!-- Recent Work Section -->
+        <div class="recent-work-container">
+            <section>
+                <img src="images/exampleImage.png" alt="Recent Work 1">
+            </section>
+            <section aria-label="Recent Work 2">
+                <img src="images/exampleImage.png" alt="Recent Work 2">
+            </section>
+            <section aria-label="Recent Work 3">
+                <img src="images/exampleImage.png" alt="Recent Work 3">
+            </section>
+        </div>
+    </main>
 
-    <footer>
-        <div class="footer">
-            <h3>
-                <p>
-                    footer
-                </p>
-            </h3>
-        </div>
+    <!-- Footer Section -->
+    <footer class="footer" role="contentinfo">
+        <h3>Footer</h3>
     </footer>
+</body>
 </html>
