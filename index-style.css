@@ -1,0 +1,17 @@
+html{
+    overflow: hidden;
+}
+
+/* main content styling */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main-content h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}

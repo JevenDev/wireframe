@@ -1,0 +1,41 @@
+/* Flexbox container for contact options */
+.contact-options {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+    padding: 1rem;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* styling for each contact option */
+.contact-options section {
+    border: 2px dashed #000;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fff;
+    flex: 0 0 auto;
+    transition: background-color 0.3s ease, transform 0.3s ease, filter 0.3s ease;
+    padding: 2rem;
+    height: 200px;
+    width: 200px;
+}
+
+.contact-options section a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* hover effect for the contact options */
+.contact-options section:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+    filter: brightness(0.9);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}

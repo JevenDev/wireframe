@@ -5,6 +5,11 @@
     margin: 0;
 }
 
+/* hide the scrollbar for consistency */
+body::-webkit-scrollbar {
+    display: none;
+}
+
 /* body styling */
 body {
     background-color: #f0f0f0;
@@ -80,3 +85,4 @@ body {
     padding: 1rem 0;
     background-color: #fff;
 }
+
