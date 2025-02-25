@@ -1,15 +1,17 @@
+/* seperate style sheet to reference on each page that repeats this content */
+
 * {
     padding: 0;
     margin: 0;
 }
 
-/* Body styling */
+/* body styling */
 body {
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
 }
 
-/* Flexbox container for main content */
+/* flexbox container for navbar content */
 .flex-box {
     display: flex;
     flex-wrap: wrap;
@@ -20,42 +22,34 @@ body {
     gap: 1rem;
 }
 
-/* Flexbox container for recent work */
-.recent-work-container {
-    display: flex;
-    flex-wrap: nowrap;
-    margin: 0 auto;
-    padding: 1rem;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 1rem;
-    overflow-x: auto;
-}
-
-/* Styling for each section in the flexbox */
+/* styling for each section in the navbar flexbox */
 .flex-box section, .recent-work-container section {
     border: 2px dashed #000;
     border-radius: 10px;
-    padding: 2rem;
     text-align: center;
     background-color: #fff;
     flex: 0 0 auto;
+    transition: background-color 0.3s ease;
 }
 
-/* Ensure recent work sections adjust to fit the image */
-.recent-work-container section {
-    position: relative;
-    width: 25%;
-}
-
-.recent-work-container section img {
-    width: 100%;
+.flex-box section a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
     height: 100%;
-    object-fit: contain;
-    border-radius: 10px;
+    width: 100%;
+    padding: 2rem;
 }
 
-/* Header styling */
+.flex-box section:hover {
+    background-color: #e0e0e0;
+}
+
+.flex-box .current-page {
+    background-color: rgb(182, 182, 182);
+}
+
+/* header styling */
 .header {
     display: flex;
     justify-content: center;
@@ -66,12 +60,12 @@ body {
     background-color: #fff;
 }
 
-/* Break between header and main content */
+/* break between header and main content */
 .header-break {
     padding: 1rem;
 }
 
-/* Footer styling */
+/* footer styling */
 .footer {
     position: fixed;
     left: 0;
