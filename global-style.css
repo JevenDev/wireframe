@@ -38,7 +38,10 @@ body {
     display: flex;
     height: 100%;
     width: 100%;
-    padding: 2rem;
+    padding: 1.3rem 5rem;
+    max-width: 7rem;   
+    min-width: 7rem;
+    justify-content: center;
 }
 
 .flex-box section:hover {
@@ -74,6 +77,6 @@ body {
     text-align: center;
     border: 2px dashed #000;
     border-radius: 10px;
-    padding: 1rem;
+    padding: 1rem 0;
     background-color: #fff;
 }
