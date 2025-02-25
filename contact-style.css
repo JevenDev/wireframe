@@ -1,4 +1,4 @@
-/* Flexbox container for contact options */
+/* flexbox container for contact options */
 .contact-options {
     display: flex;
     flex-wrap: wrap;

@@ -1,0 +1,65 @@
+.previous-work-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 60%;
+}
+
+.work-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 2.5rem;
+    border: 2px dashed #000;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.work-thumbnail {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-right: 2rem;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* hover effect for the work thumbnails */
+.work-item img:hover {
+    transform: scale(1.05);
+    filter: brightness(0.9);
+}
+
+.work-text {
+    flex: 1;
+}
+
+.work-text h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.work-text h2 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.work-text h2 a:hover {
+    text-decoration: underline;
+}
+
+.work-text h3 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.work-text p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#container-last {
+    padding-bottom: 5rem;
+}

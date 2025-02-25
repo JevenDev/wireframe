@@ -6,6 +6,7 @@
 }
 
 /* hide the scrollbar for consistency */
+/* learned from: https://refine.dev/blog/css-hide-scrollbar/#css-properties-to-hide-browser-scrollbars */
 body::-webkit-scrollbar {
     display: none;
 }
@@ -85,4 +86,3 @@ body {
     padding: 1rem 0;
     background-color: #fff;
 }
-
